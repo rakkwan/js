@@ -5,23 +5,22 @@
     create a function heeHaw()
 
  */
+//window.onload = heeHaw(number);
 
-window.onload = heeHaw();
-
-function heeHaw()
+function heeHaw(number)
 {
-    let theNumber = Number(prompt("Pick a number"));
-    if (Number.isNaN(theNumber))
+    console.log("The number is " + number);
+    if (Number.isNaN(number))
     {
         console.log("Please Enter a valid number!");
     }
-    else if (theNumber < 0)
+    else if (number < 0)
     {
         console.log("Please enter a positive number");
     }
     else
     {
-        for (let i = 1; i <= theNumber; i++)
+        for (let i = 1; i <= number; i++)
         {
             if (i % 3 == 0 && i % 5 == 0)
             {
@@ -42,3 +41,10 @@ function heeHaw()
         }
     }
 }
+
+heeHaw(-2);
+heeHaw(50);
+heeHaw(100);
+heeHaw(-30);
+
+
