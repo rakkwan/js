@@ -34,7 +34,7 @@ function arrayObject(array)
         }
     }
 
-    document.getElementById("object2").innerHTML = JSON.stringify(result, null, 10);
+    document.getElementById("object2").innerHTML = JSON.stringify(result, null, 5);
 }
 
 let input = [-1, 5, "cat", false, 10.2, true, "dog", true];
