@@ -1,0 +1,45 @@
+{
+  "name": "jgoodric/328/js/chapter5",
+  "people": [
+    {
+      "name": "Jane Doe",
+      "sex": "f",
+      "born": "1876",
+      "died": "1956",
+      "father": "Petrus de Milliano",
+      "mother": "Sophia van Damme"
+    },
+    {
+      "name": "Jane Ramirez",
+      "sex": "",
+      "born": "",
+      "died": "",
+      "father": "",
+      "mother": ""
+    },
+    {
+      "name": "",
+      "sex": "",
+      "born": "",
+      "died": "",
+      "father": "",
+      "mother": ""
+    },
+    {
+      "name": "",
+      "sex": "",
+      "born": "",
+      "died": "",
+      "father": "",
+      "mother": ""
+    },
+    {
+      "name": "",
+      "sex": "",
+      "born": "",
+      "died": "",
+      "father": "",
+      "mother": ""
+    }
+  ]
+}
