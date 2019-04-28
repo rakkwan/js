@@ -1,6 +1,4 @@
-{
-  "name": "jgoodric/328/js/chapter5",
-  "people": [
+[
     {
       "name": "Jane Doe",
       "sex": "f",
@@ -11,35 +9,34 @@
     },
     {
       "name": "Jane Ramirez",
-      "sex": "",
-      "born": "",
-      "died": "",
-      "father": "",
-      "mother": ""
+      "sex": "f",
+      "born": "2000",
+      "died": "2019",
+      "father": "Steve Ramirez",
+      "mother": "Karen Ramirez"
     },
     {
-      "name": "",
-      "sex": "",
-      "born": "",
-      "died": "",
-      "father": "",
-      "mother": ""
+      "name": "May Jensen",
+      "sex": "f",
+      "born": "1976",
+      "died": "2000",
+      "father": "Dave Bilc",
+      "mother": "Maria Bilc"
     },
     {
-      "name": "",
-      "sex": "",
-      "born": "",
-      "died": "",
-      "father": "",
-      "mother": ""
+      "name": "Bo Down",
+      "sex": "M",
+      "born": "1945",
+      "died": "1980",
+      "father": "Nick Down",
+      "mother": "Sonya Down"
     },
     {
-      "name": "",
-      "sex": "",
-      "born": "",
-      "died": "",
-      "father": "",
-      "mother": ""
+      "name": "David Jensen",
+      "sex": "M",
+      "born": "1900",
+      "died": "1960",
+      "father": "Mike Jensen",
+      "mother": "Mary Jensen"
     }
-  ]
-}
+]
