@@ -1,31 +1,86 @@
-$("#search").on("click", function()
-{
-    let output = $("#output");
-    let val = $("#input").val().toLowerCase();
-    let count = 0;
+/*
+    Name: Jittima Goodrich
+    File: json-search.js
+    Date: 5/1/2019
+    This is a file to display search objects
+ */
 
-    // json data
-    $.getJSON("json-search.json", function(result)
+var json = [
     {
-        $.each(result, function(index, object)
-        {
-            let name = object.name.toLowerCase();
-            if (name.includes(val))
-            {
-                output.append("<p><strong>Name:</strong> " + object.name + "</p>");
-                output.append("<p><strong>Sex:</strong> " + object.sex + "</p>");
-                output.append("<p><strong>Born:</strong> " + object.born + "</p>");
-                output.append("<p><strong>Died:</strong> " + object.died + "</p>");
-                output.append("<p><strong>Father:</strong> " + object.father + "</p>");
-                output.append("<p><strong>Mother:</strong> " + object.mother + "</p><br>");
+        "name": "Jane Doe",
+        "sex": "F",
+        "born": "1876",
+        "died": "1956",
+        "father": "Petrus de Milliano",
+        "mother": "Sophia van Damme"
+    },
+    {
+        "name": "Jane Ramirez",
+        "sex": "F",
+        "born": "2000",
+        "died": "2019",
+        "father": "Steve Ramirez",
+        "mother": "Karen Ramirez"
+    },
+    {
+        "name": "May Jensen",
+        "sex": "F",
+        "born": "1976",
+        "died": "2000",
+        "father": "Dave Bilc",
+        "mother": "Maria Bilc"
+    },
+    {
+        "name": "Bo Down",
+        "sex": "M",
+        "born": "1945",
+        "died": "1980",
+        "father": "Nick Down",
+        "mother": "Sonya Down"
+    },
+    {
+        "name": "David Bensen",
+        "sex": "M",
+        "born": "1900",
+        "died": "1960",
+        "father": "Mike Bensen",
+        "mother": "Mary Bensen"
+    }
+];
 
-                count++;
-            }
-        });
+// assign a function for a btn
+let btn = document.getElementById('search');
+btn.onclick = search;
+// get the text box
+let txt = document.getElementById('input');
+// get the output to the div
+let results = document.getElementById('output');
 
-        if (count == 0)
+function search()
+{
+    let val = txt.value.toLowerCase();
+    let count = 0;
+    // json data
+    for (let i = 0; i < json.length; i++)
+    {
+        // check the name input
+        if (val.includes(json[i].name.toLowerCase().substring(0, val.length)))
         {
-            output.append("<p>No person found</p>");
+            results.innerHTML +=
+                "<p>Name: " + json[i].name +
+                "<br>Sex: " + json[i].sex +
+                "<br>Born: "+ json[i].born +
+                "<br>Die: "+ json[i].died +
+                "<br>Father: "+ json[i].father+
+                "<br>Mother: "+ json[i].mother
+            "</p><br>";
+            count++;
         }
-    });
-});
+    }
+
+    // if the name is not found
+    if (count === 0)
+    {
+        results.innerHTML = ("<p>No person found</p>");
+    }
+}

@@ -1,7 +1,7 @@
 [
     {
       "name": "Jane Doe",
-      "sex": "f",
+      "sex": "F",
       "born": "1876",
       "died": "1956",
       "father": "Petrus de Milliano",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Jane Ramirez",
-      "sex": "f",
+      "sex": "F",
       "born": "2000",
       "died": "2019",
       "father": "Steve Ramirez",
@@ -17,7 +17,7 @@
     },
     {
       "name": "May Jensen",
-      "sex": "f",
+      "sex": "F",
       "born": "1976",
       "died": "2000",
       "father": "Dave Bilc",
